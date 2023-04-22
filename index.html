@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Employee List</h1>
+      <div class="filters">
+        <label for="profession">Filter by profession:</label>
+        <select id="profession">
+          <option value="">Select a profession</option>
+          <option value="developer">Developer</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button id="filter-btn">Filter</button>
+      </div>
+      <div class="employee-list">
+        <h2>Employee List:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Profession</th>
+            </tr>
+          </thead>
+          <tbody id="employee-table-body"></tbody>
+        </table>
+      </div>
+      <div class="add-employee">
+        <h2>Add a new employee:</h2>
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-row">
+          <label for="age">Age:</label>
+          <input type="number" id="age" />
+        </div>
+        <div class="form-row">
+          <label for="profession">Profession:</label>
+          <input type="text" id="profession" />
+        </div>
+        <div class="form-row">
+          <button id="add-btn">Add</button>
+        </div>
+        <div class="form-row">
+          <p id="add-message"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
