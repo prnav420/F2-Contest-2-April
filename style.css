@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.filters,
+.add-employee,
+.employee-list {
+  margin-bottom: 20px;
+}
+
+.filters label,
+.add-employee label {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.filters select,
+.add-employee input[type="text"],
+.add-employee input[type="number"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1em;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.filters select:focus,
+.add-employee input[type="text"]:focus,
+.add-employee input[type="number"]:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.filters button,
+.add-employee button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.filters button:hover,
+.add-employee button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.employee-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-list th,
+.employee-list td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.employee-list th {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.employee-list td {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
